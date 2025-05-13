@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "68221d7eafdf1e8328058ca5"
+  },
+  "name": "Dita Yustianisa",
+  "NIM": "D0222327",
+  "JK": "perempuan",
+  "address": "Enrekang",
+  "no_hp": "082248117393",
+  "email": "yustianisadita@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "68221f33afdf1e8328058ca7"
+  },
+  "name": "Gabrelia",
+  "NIM": "D022324",
+  "JK": "Perempuan",
+  "address": "Salo Karaja",
+  "no_hp": "083456735678",
+  "email": "gabrelia@gmail.com"
+}]
