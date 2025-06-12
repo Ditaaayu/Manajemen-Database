@@ -1,0 +1,7 @@
+// Logical Query
+db.buku.find({
+    $and: [
+        {kategori : {$eq : "Sistem Informasi"}},
+        {tahun_terbit: {$eq: 2020}}
+    ]
+})
