@@ -1,0 +1,3 @@
+// Delete Dokumen
+db.buku.deleteOne({kategori: "Ilmu Komputer"})
+db.buku.find()
