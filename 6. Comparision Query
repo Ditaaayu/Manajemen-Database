@@ -1,0 +1,6 @@
+// Compararision Query
+db.buku.find({
+    tahun_terbit: {
+        $eq : 2020
+    }
+})
