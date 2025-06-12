@@ -1,0 +1,12 @@
+// Aggregatetion
+db.buku.aggregate([
+  {
+    $group: {
+      _id: "$kategori",
+      totalStok: { $sum: "$stok" }
+    }
+  },
+  {
+    $sort: { totalStok: -1 }
+  }
+])
