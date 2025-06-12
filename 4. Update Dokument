@@ -1,0 +1,5 @@
+// Update dokumen
+db.buku.updateOne({isbn : "978-602-1234-987-6"},
+    {$set : {isbn: "22222222"}}
+)
+db.buku.find()
