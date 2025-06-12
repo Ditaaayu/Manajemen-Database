@@ -1,0 +1,34 @@
+// Bulk Write
+
+db.buku.bulkWrite([
+  {
+    insertOne: {
+      document: {
+        _id: ObjectId(),
+        judul: "Jaringan Komputer",
+        penulis: "Yusuf Hidayat",
+        penerbit: "Elex Media",
+        tahun_terbit: 2020,
+        kategori: "Teknologi Informasi",
+        isbn: "978-602-1234-111-1",
+        stok: 8,
+        lokasi: "Rak D4"
+      }
+    }
+  },
+  // Update stok buku berdasarkan judul
+  {
+    updateOne: {
+      filter: { judul: "Algoritma dan Pemrograman" },
+      update: { $inc: { stok: 2 } } // tambah stok sebanyak 2
+    }
+  },
+  // Hapus buku berdasarkan judul
+  {
+    deleteOne: {
+      filter: { judul: "Struktur Data" }
+    }
+  }
+  
+])
+db.buku.find()
