@@ -1,5 +1,0 @@
-// Database
-use("PerpusMahasiswa")
-
-// Membuat collection
-db.createCollection("buku")
